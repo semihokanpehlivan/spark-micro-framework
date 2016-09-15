@@ -140,7 +140,7 @@ public class HelloSpark {
         get("/to", (request, response) -> "to");
 
         get("/exception", (request, response) -> {
-            throw new CustomException();
+            throw new CustomException("Exception message");
         });
 
         exception(CustomException.class, (exception, request, response) -> {

@@ -5,7 +5,7 @@ package spark.template.freemaker;
  */
 public class CustomException extends Exception {
 
-    public CustomException() {
-        super("Custom Exception");
+    public CustomException(String message) {
+        super(message);
     }
 }
